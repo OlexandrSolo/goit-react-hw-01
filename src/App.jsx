@@ -12,7 +12,7 @@ function App() {
     <div>
       <Profile props={userData} />
       <FriendList friends={friends} />
-      <TransactionHistory operation={transactions} />
+      <TransactionHistory operations={transactions} />
     </div>
   );
 }
