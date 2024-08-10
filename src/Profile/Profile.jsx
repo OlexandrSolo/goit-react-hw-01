@@ -1,6 +1,7 @@
+import css from './Profile.module.css';
 export default function Profile({
   props: {
-    name,
+    username,
     tag,
     location,
     avatar,
@@ -8,25 +9,38 @@ export default function Profile({
   },
 }) {
   return (
-    <div>
-      <div>
-        <img src={avatar} alt="user avatar" />
-        <p>{name}</p>
+    <div className={css.profileWrapper}>
+      <div className={css.thumb}>
+        <img
+          className={css.userPhoto}
+          src={avatar}
+          alt="user avatar"
+          width="150px"
+        />
+        <p>
+          <b>{username}</b>
+        </p>
         <p>{tag}</p>
         <p>{location}</p>
       </div>
-      <ul>
-        <li>
+      <ul className={css.informationList}>
+        <li className={css.informationItem}>
           <span>Followers</span>
-          <span>{followers}</span>
+          <span>
+            <b>{followers}</b>
+          </span>
         </li>
-        <li>
+        <li className={css.informationItem}>
           <span>Views</span>
-          <span>{views}</span>
+          <span>
+            <b>{views}</b>
+          </span>
         </li>
-        <li>
+        <li className={css.informationItem}>
           <span>Likes</span>
-          <span>{likes}</span>
+          <span>
+            <b>{likes}</b>
+          </span>
         </li>
       </ul>
     </div>

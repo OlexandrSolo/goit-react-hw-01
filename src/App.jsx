@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Profile props={userData} />
       <FriendList friends={friends} />
       <TransactionHistory operations={transactions} />

@@ -1,0 +1,30 @@
+.userThumb {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* .userThumb:hover {
+  box-shadow: rgba(85, 82, 82, 0.2) 0px 4px 8px 0px;
+  border-radius: 10%;
+} */
+
+.isActive {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+
+  border-radius: 100%;
+}
+.online {
+  background-color: green;
+}
+.offline {
+  background-color: red;
+}

@@ -1,0 +1,11 @@
+.friendListItem {
+  padding: 15px 10px;
+}
+.friendListItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.friendListItem:hover {
+  box-shadow: rgba(85, 82, 82, 0.2) 0px 4px 8px 0px;
+  border-radius: 10%;
+}

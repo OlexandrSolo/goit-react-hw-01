@@ -1,7 +1,7 @@
+import css from './TransactionHistory.module.css';
 import TransactionHistoryRow from '../TransactionHistoryRow/TransactionHistoryRow';
 
 export default function TransactionHistory({ operations }) {
-  // console.log(operations);
   return (
     <table>
       <tr>

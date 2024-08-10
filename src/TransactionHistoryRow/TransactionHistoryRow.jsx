@@ -1,5 +1,6 @@
+import css from './TransactionHistoryRow.module.css';
 export default function TransactionHistoryRow({
-  operation: { id, type, amount, currency },
+  operation: { type, amount, currency },
 }) {
   return (
     <>
