@@ -3,15 +3,15 @@ import TransactionHistoryRow from '../TransactionHistoryRow/TransactionHistoryRo
 
 export default function TransactionHistory({ operations }) {
   return (
-    <table>
+    <table className={css.tableHistory}>
       <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <th className={css.tableHeader}>Type</th>
+        <th className={css.tableHeader}>Amount</th>
+        <th className={css.tableHeader}>Currency</th>
       </tr>
       <tbody>
         {operations.map(operation => (
-          <tr key={operation.id}>
+          <tr className={css.tableRow} key={operation.id}>
             <TransactionHistoryRow operation={operation} />
           </tr>
         ))}

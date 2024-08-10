@@ -4,9 +4,9 @@ export default function TransactionHistoryRow({
 }) {
   return (
     <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <td className={css.tableDate}>{type}</td>
+      <td className={css.tableDate}>{amount}</td>
+      <td className={css.tableDate}>{currency}</td>
     </>
   );
 }
